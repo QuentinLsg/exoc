@@ -203,34 +203,7 @@ Le système inclut une validation complète des données :
 
 ## 🚀 Compilation et Exécution
 
-### **Windows**
-```cmd
-# Avec MSYS2/MinGW
-make clean
-make
-make run
-
-# Ou compilation manuelle
-gcc -Wall -Wextra -std=c99 -g -o f1_management.exe main.c structures.c pilote.c ecurie.c grandprix.c classement.c initialisation.c
-f1_management.exe
-
-# Avec WSL2
-make clean
-make
-./f1_management.exe
-```
-
-### **macOS/Linux**
-```bash
-# Accepter la licence Xcode (si nécessaire sur macOS)
-sudo xcodebuild -license
-
-# Compiler avec Make
-make clean
-make
-make run
-
-# Ou compiler manuellement
+# Compiler manuellement
 gcc -Wall -Wextra -std=c99 -g -o f1_management main.c structures.c pilote.c ecurie.c grandprix.c classement.c initialisation.c
 ./f1_management
 ```

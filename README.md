@@ -47,27 +47,6 @@ ExoC/
 - **ResultatCourse** : Résultats d'une course
 - **GrandPrix** : Informations complètes d'un Grand Prix
 
-## Installation et Compilation
-
-### Prérequis Windows
-- **MSYS2/MinGW** (recommandé) : https://www.msys2.org/
-- **WSL2** (alternative) : `wsl --install`
-- **Git Bash** (basique) : Inclus avec Git
-
-### Compilation avec Make (Windows)
-```bash
-# Compiler le projet
-make
-
-# Nettoyer les fichiers de compilation
-make clean
-
-# Recompiler complètement
-make rebuild
-
-# Compiler et exécuter
-make run
-```
 
 ### Compilation Manuelle (Windows)
 ```cmd
@@ -77,29 +56,6 @@ gcc -Wall -Wextra -std=c99 -g -o f1_management.exe main.c structures.c pilote.c 
 # Exécution
 f1_management.exe
 ```
-
-### Script Batch (.bat) - Alternative Simple
-Créez un fichier `compile.bat` :
-```batch
-@echo off
-echo Compilation du projet F1...
-gcc -Wall -Wextra -std=c99 -g -o f1_management.exe main.c structures.c pilote.c ecurie.c grandprix.c classement.c initialisation.c
-if %errorlevel% equ 0 (
-    echo Compilation reussie !
-    f1_management.exe
-) else (
-    echo Erreur de compilation !
-)
-pause
-```
-
-### Environnements Windows Supportés
-- **MSYS2/MinGW** : Environnement Unix-like complet
-- **WSL2** : Sous-système Linux sur Windows
-- **Git Bash** : Terminal basique avec make
-- **Command Prompt** : Compilation directe avec gcc
-
-## Utilisation
 
 ### Lancement du Programme (Windows)
 ```cmd
